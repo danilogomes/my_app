@@ -1,0 +1,3 @@
+# view AndroidManifest.xml #generated:52
+-keep class com.example.cordova_my_app.MyApp { <init>(...); }
+
