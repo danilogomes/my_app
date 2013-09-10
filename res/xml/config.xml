@@ -101,6 +101,10 @@
     <feature name="InAppBrowser">
       <param name="android-package" value="org.apache.cordova.InAppBrowser"/>
     </feature>
+    <feature name="debug-server" required="true">
+      <param name="domain" value="http://debug.custom.com"/>
+      <param name="key" value="some_unique_key"/>
+    </feature>
     <!-- Deprecated plugins element. Remove in 3.0 -->
     <plugins>
     </plugins>
