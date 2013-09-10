@@ -139,6 +139,16 @@ function check_network() {
     confirm('Connection type:\n ' + states[networkState]);
 }
 
+function onDeviceReady() {
+    var networkState = checkConnection();
+    /* load local files if there is not network connection */
+    if (networkState == Connection.NONE) {
+        window.location="local/no_conecction.html"; 
+    } else {
+        window.location="http://blogdobg.com.br";
+    }
+}
+
 var watchID = null;
 
 function updateHeading(h) {
